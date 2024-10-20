@@ -1,11 +1,8 @@
 import sys
 import os
-import asyncio
-from hypercorn.config import Config
-from hypercorn.asyncio import serve
 
 sys.path.append(os.getcwd())
 
-from another_worker import app
+from another_worker import quart_app as application
 
-asyncio.run(serve(app, Config()))
+
