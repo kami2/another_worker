@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["another_worker*"]
+
+[project]
+name = "another_worker"
+version = "0.0.1"
+authors = [
+  { name="Kamil" },
+]
+description = "Another Worker app"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    'quart'
+]
+
+[project.urls]
+"Homepage" = "https://github.com/kami2/another_worker"
